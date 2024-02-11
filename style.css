@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+
+}
+
+body{
+    background-color: #f2bec7;
+}
+
+.quotes-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(170, 238, 255, 0.867);
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.30);
+    transform: translate(-50%, -50%);
+}
+
+.quotes-box h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quotes-box h2::after{
+    content: "";
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    position: absolute;
+    background-color: blueviolet;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.quotes-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.quotes-box blockquote::after, .quotes-box blockquote::before{
+    content: '"';
+}
+
+.quotes-box span{
+    font-size: 16px;
+    float: right;
+    display: block;
+    margin-top: 10px;
+    position: relative;
+
+}
+
+.quotes-box span::before{
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 50%;
+    left: -30px;
+
+}
+
+.quotes-box div{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.quotes-box button{
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 17px;
+    background-color: rgb(42, 129, 251);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.30);
+    
+}
+
+.quotes-box button:nth-child(2){
+    background-color: white;
+    color: black;
+    
+}
